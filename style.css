@@ -12,7 +12,6 @@ body {
 
 /*navbar section*/
 .navbar {
-  /*   background-color: #41ff6b; */
   background-color: white; /* 0.2 = 20% opacity */
   display: flex;
   justify-content: space-between;
@@ -39,3 +38,84 @@ body {
   height: 20px;
 }
 
+/**hero section**/
+.hero {
+  background: linear-gradient(to right, #013223, #006747, #013223);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+  padding: 60px 35px;
+  color: white;
+  line-height: 2.1;
+}
+
+.hero img {
+  max-height: 100%;
+}
+
+/**main section**/
+.mh {
+  padding: 30px 70px;
+}
+/**card section**/
+.cardCollection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.card {
+  height: 220px;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px gray;
+}
+.c1 {
+  display: flex;
+  justify-content: space-between;
+}
+.c2 {
+  line-height: 1.8;
+}
+.c2 button {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+}
+.icon1 {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe3e2;
+}
+.greenCall:hover {
+  background-color: gray !important;
+  color: white;
+}
+.copyClass:hover {
+  background-color: black;
+  color: white !important;
+}
+.icon1 img,
+.icon2 img {
+  height: 70%;
+}
+
+.icon2 {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dfefff;
+}
