@@ -129,3 +129,67 @@ body {
 .callHistory {
   background-color: white;
 }
+/**Responsive Design for normal screen size mobile device**/
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 20px 5px;
+  }
+
+  .hero {
+    height: 250px;
+    padding: 30px 10px;
+  }
+
+  .hero img {
+    height: 40%;
+  }
+  .mh {
+    padding: 30px 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardCollection {
+    grid-template-columns: 1fr !important;
+    justify-content: center !important;
+  }
+
+  .callHistory {
+    margin-top: 20px;
+    width: 290px;
+  }
+}
+/**Responsive for smaller screen mobile**/
+@media screen and (max-width: 400px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: center;
+    padding: 5px 5px;
+  }
+  .header-left {
+    margin: 0 auto;
+  }
+  .header-left img {
+    width: 30% !important;
+    height: 60%;
+  }
+
+  .hero {
+    height: 270px;
+    padding: 25px 5px;
+  }
+  .hero img {
+    height: 30%;
+    width: 25% !important;
+  }
+  .card {
+    width: 260px;
+  }
+  .callHistory {
+    margin-top: 20px;
+    width: 270px;
+  }
+}

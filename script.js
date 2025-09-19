@@ -98,3 +98,32 @@ function callAlert(id) {
     callHistoryList = [];
     callHistoryRecord.innerHTML = "";
   });
+//Challenge Part//
+function copyAlert(copy) {
+  // Get the h2 text
+  const copyItem = copy.parentElement.querySelector("h2").innerText;
+
+  // Copy to clipboard
+  //navigator.clipboard → a built-in API in browsers that lets to copy and paste text. .
+  //writeText(copyItem) → copies the text stored in copyItem to the system clipboard.
+  navigator.clipboard
+    .writeText(copyItem)
+    .then(() => {
+      alert(copyItem + " is copied to clipboard!");
+    })
+    .catch((err) => {
+      console.error("Failed to copy: ", err);
+    });
+}
+
+const copyClass = document.getElementsByClassName("copyClass");
+const copyCount = document.getElementById("copyCount");
+let copyCountValue = 0;
+
+for (const copy of copyClass) {
+  copy.addEventListener("click", function () {
+    copyAlert(copy);
+    copyCountValue++;
+    copyCount.innerText = copyCountValue;
+  });
+}
